@@ -3,18 +3,13 @@
 * SPDX-License-Identifier: MIT
 ******************************************************************************/
 /*
- * helloworld.c: simple test application
- *
- * This application configures UART 16550 to baud rate 9600.
- * PS7 UART (Zynq) is not initialized by this application, since
- * bootrom/bsp configures it to baud rate 115200
- *
- * ------------------------------------------------
- * | UART TYPE   BAUD RATE                        |
- * ------------------------------------------------
- *   uartns550   9600
- *   uartlite    Configurable only in HW design
- *   ps7_uart    115200 (configured by bootrom/bsp)
+ * Switches_a_RGB_LEDs.c: 
+ * Esta aplicacion de ejemplo lee los 6 primeros switches (SW0-SW5) de la placa RealDigital AMD Urbana
+ * y escribe el estado de los mismos en los 2 LEDs RGBs (RGB0 y RGB1) de la misma placa.
+ * Para tanto lectura como escritura se utiliza la libreria que controla el AXI GPIO instalado en la FPGA.
+ * El control de los colores es el siguiente:
+ * - RGB0: SW0 Rojo, SW1 verde, SW2 azul
+ * - RGB1: SW3 Rojo, SW4 verde, Sw5 azul
  */
 
 #include <stdio.h>

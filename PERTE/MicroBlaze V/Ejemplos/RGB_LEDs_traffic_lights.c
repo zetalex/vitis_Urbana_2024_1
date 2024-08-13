@@ -3,18 +3,13 @@
 * SPDX-License-Identifier: MIT
 ******************************************************************************/
 /*
- * helloworld.c: simple test application
- *
- * This application configures UART 16550 to baud rate 9600.
- * PS7 UART (Zynq) is not initialized by this application, since
- * bootrom/bsp configures it to baud rate 115200
- *
- * ------------------------------------------------
- * | UART TYPE   BAUD RATE                        |
- * ------------------------------------------------
- *   uartns550   9600
- *   uartlite    Configurable only in HW design
- *   ps7_uart    115200 (configured by bootrom/bsp)
+ * LEDs_periodic.c: 
+ * Esta aplicacion enciende los 2 LEDs RGB que tiene la placa RealDigital AMD Urbana imitando el comportamiento de un semáforo:
+ * - Se enciende RGB1 en rojo
+ * - Se encienden ambos RGB1 y RGB0 en amarillo (rojo + verde)
+ * - Se enciende RGB0 en verde
+ * 
+ * Este comportamiento se repite cíclicamente.
  */
 
 #include <stdio.h>
