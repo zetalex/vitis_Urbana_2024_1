@@ -1,0 +1,36 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "tcf-debug",
+			"request": "launch",
+			"name": "hello_world_BRAM_app_hw_1",
+			"debugType": "baremetal-fpga",
+			"attachToRunningTargetOptions": {
+				"targetSetupMode": "standalone",
+				"executeScript": true,
+				"scriptPath": ""
+			},
+			"autoAttachProcessChildren": false,
+			"target": {
+				"targetConnectionId": "Local",
+				"peersIniPath": "../../../.wsdata/.peers.ini",
+				"context": "fpga"
+			},
+			"targetSetup": {
+				"resetSystem": true,
+				"programDevice": true,
+				"bitstreamFile": "C:\\Users\\Alejandro\\vitis_projects_bis\\hello_world_BRAM\\_ide\\bitstream\\top_Urbana.bit",
+				"downloadElf": [
+					{
+						"core": "microblaze_0",
+						"resetProcessor": true,
+						"elfFile": "${workspaceFolder}\\hello_world_BRAM\\build\\hello_world_BRAM.elf",
+						"stopAtEntry": false
+					}
+				]
+			},
+			"internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}

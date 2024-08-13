@@ -1,0 +1,37 @@
+{
+  "name": "platform_microblaze_riscv",
+  "type": "PLATFORM",
+  "configuration": {
+    "description": "",
+    "xsa": "C:\\Users\\Alejandro\\Downloads\\hw\\top_Urbana.xsa",
+    "xsaPathInPlatform": "platform_microblaze_riscv\\hw\\top_Urbana.xsa",
+    "emulationXsa": "",
+    "emulationXsaPathInPlatform": "",
+    "isCustomFSBL": false,
+    "fsblPath": "",
+    "pmufwElf": "",
+    "flow": "EMBEDDED",
+    "processorsMap": {
+      "microblaze_0": "microblaze_riscv"
+    },
+    "supportedFamily": "fpga",
+    "componentType": "PLATFORM",
+    "domains": [
+      {
+        "name": "standalone_microblaze_0",
+        "displayName": "standalone_microblaze_0",
+        "processor": "microblaze_0",
+        "cpuType": "microblaze_riscv",
+        "cpuInstance": "microblaze_0",
+        "os": "standalone",
+        "appTemplate": "empty_application",
+        "isBootDomain": false,
+        "qemuData": "",
+        "qemuArgsFile": "",
+        "pmcQemuArgsFile": "",
+        "isBSPGenReq": false
+      }
+    ],
+    "emptyToolchainConfiguration": []
+  }
+}
