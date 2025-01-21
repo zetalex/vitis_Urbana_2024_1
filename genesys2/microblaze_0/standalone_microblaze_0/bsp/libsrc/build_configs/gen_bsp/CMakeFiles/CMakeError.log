@@ -1,0 +1,28 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin/riscv64-unknown-elf-gcc.exe 
+Build flags: ;-O2;-march=rv32ic_zicsr_zifencei;-mabi=ilp32;-DSDT;;-MMD;-MP;-specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec;-IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include
+Id flags:  
+
+The output was:
+1
+c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: C:\Users\ALEJAN~1\AppData\Local\Temp\ccuTKcMA.o: can't link soft-float modules with double-float modules
+c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: failed to merge target specific data of file C:\Users\ALEJAN~1\AppData\Local\Temp\ccuTKcMA.o
+collect2.exe: error: ld returned 1 exit status
+
+
+The C compiler identification could not be found in "C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.d"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin/riscv64-unknown-elf-g++.exe 
+Build flags: ;-O2;-march=rv32ic_zicsr_zifencei;-mabi=ilp32;-DSDT;;-MMD;-MP;-specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec;-IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include
+Id flags:  
+
+The output was:
+1
+c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: C:\Users\ALEJAN~1\AppData\Local\Temp\ccNi5U7n.o: can't link soft-float modules with double-float modules
+c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: failed to merge target specific data of file C:\Users\ALEJAN~1\AppData\Local\Temp\ccNi5U7n.o
+collect2.exe: error: ld returned 1 exit status
+
+
+The CXX compiler identification could not be found in "C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.d"
+
