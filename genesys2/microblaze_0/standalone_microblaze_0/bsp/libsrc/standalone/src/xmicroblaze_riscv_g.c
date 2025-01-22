@@ -2,7 +2,7 @@
 
 XMicroblaze_RISCV_Config XMicroblaze_RISCV_ConfigTable[] __attribute__ ((section (".drvcfg_sec"))) = {
 	{
-		0xbebc200,  /* timebase-frequency */
+		0x5f5e100,  /* timebase-frequency */
 		0x5f5e100,  /* xlnx,freq */
 		0x0,
 		0x0,  /* xlnx,base-vectors */

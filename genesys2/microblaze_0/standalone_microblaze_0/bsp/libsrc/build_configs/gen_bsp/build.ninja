@@ -109,7 +109,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 #############################################
 # Utility command for combined
 
-build libsrc/combined: phony libsrc/CMakeFiles/combined libsrc/intc/src/libintc.a libsrc/uartlite/src/libuartlite.a
+build libsrc/combined: phony libsrc/CMakeFiles/combined libsrc/gpio/src/libgpio.a libsrc/intc/src/libintc.a libsrc/uartlite/src/libuartlite.a
 
 
 #############################################
@@ -180,8 +180,8 @@ build libsrc/install/strip: phony libsrc/CMakeFiles/install/strip.util
 #############################################
 # Custom command for libsrc\CMakeFiles\combined
 
-build libsrc/CMakeFiles/combined | ${cmake_ninja_workdir}libsrc/CMakeFiles/combined: CUSTOM_COMMAND libsrc/intc/src/libintc.a libsrc/uartlite/src/libuartlite.a || libsrc/intc/src/libintc.a libsrc/uartlite/src/libuartlite.a
-  COMMAND = cmd.exe /C "cd /D C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2\microblaze_0\standalone_microblaze_0\bsp\libsrc\build_configs\gen_bsp && riscv64-unknown-elf-ar -qcs C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libxil.a C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src/CMakeFiles/intc.dir/xintc.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src/CMakeFiles/intc.dir/xintc_g.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src/CMakeFiles/intc.dir/xintc_intr.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src/CMakeFiles/intc.dir/xintc_l.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src/CMakeFiles/intc.dir/xintc_options.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src/CMakeFiles/intc.dir/xintc_selftest.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_g.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_intr.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_l.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_selftest.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_sinit.c.obj C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_stats.c.obj && C:\Xilinx\Vitis\2024.1\tps\win64\cmake-3.24.2\bin\cmake.exe -E copy C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libxil.a C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/lib"
+build libsrc/CMakeFiles/combined | ${cmake_ninja_workdir}libsrc/CMakeFiles/combined: CUSTOM_COMMAND libsrc/gpio/src/libgpio.a libsrc/intc/src/libintc.a libsrc/uartlite/src/libuartlite.a || libsrc/gpio/src/libgpio.a libsrc/intc/src/libintc.a libsrc/uartlite/src/libuartlite.a
+  COMMAND = libsrc\CMakeFiles\combined-da8ad66.bat 9ceef18175e82c1a
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -252,6 +252,143 @@ build libsrc/common/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/com
   restat = 1
 
 build libsrc/common/src/install/strip: phony libsrc/common/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gpio
+
+
+#############################################
+# Order-only phony target for gpio
+
+build cmake_object_order_depends_target_gpio: phony || libsrc/gpio/src/CMakeFiles/gpio.dir
+
+build libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio.c.obj: C_COMPILER__gpio_ C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src/xgpio.c || cmake_object_order_depends_target_gpio
+  DEP_FILE = libsrc\gpio\src\CMakeFiles\gpio.dir\xgpio.c.obj.d
+  FLAGS = -O2 -march=rv32ic_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP -specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include -isystem C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include-fixed -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+  OBJECT_FILE_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+
+build libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_extra.c.obj: C_COMPILER__gpio_ C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src/xgpio_extra.c || cmake_object_order_depends_target_gpio
+  DEP_FILE = libsrc\gpio\src\CMakeFiles\gpio.dir\xgpio_extra.c.obj.d
+  FLAGS = -O2 -march=rv32ic_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP -specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include -isystem C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include-fixed -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+  OBJECT_FILE_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+
+build libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_g.c.obj: C_COMPILER__gpio_ C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src/xgpio_g.c || cmake_object_order_depends_target_gpio
+  DEP_FILE = libsrc\gpio\src\CMakeFiles\gpio.dir\xgpio_g.c.obj.d
+  FLAGS = -O2 -march=rv32ic_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP -specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include -isystem C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include-fixed -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+  OBJECT_FILE_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+
+build libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_intr.c.obj: C_COMPILER__gpio_ C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src/xgpio_intr.c || cmake_object_order_depends_target_gpio
+  DEP_FILE = libsrc\gpio\src\CMakeFiles\gpio.dir\xgpio_intr.c.obj.d
+  FLAGS = -O2 -march=rv32ic_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP -specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include -isystem C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include-fixed -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+  OBJECT_FILE_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+
+build libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_selftest.c.obj: C_COMPILER__gpio_ C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src/xgpio_selftest.c || cmake_object_order_depends_target_gpio
+  DEP_FILE = libsrc\gpio\src\CMakeFiles\gpio.dir\xgpio_selftest.c.obj.d
+  FLAGS = -O2 -march=rv32ic_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP -specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include -isystem C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include-fixed -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+  OBJECT_FILE_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+
+build libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_sinit.c.obj: C_COMPILER__gpio_ C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src/xgpio_sinit.c || cmake_object_order_depends_target_gpio
+  DEP_FILE = libsrc\gpio\src\CMakeFiles\gpio.dir\xgpio_sinit.c.obj.d
+  FLAGS = -O2 -march=rv32ic_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP -specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include -isystem C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include-fixed -isystem C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+  OBJECT_FILE_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gpio
+
+
+#############################################
+# Link the static library libsrc\gpio\src\libgpio.a
+
+build libsrc/gpio/src/libgpio.a: C_STATIC_LIBRARY_LINKER__gpio_ libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio.c.obj libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_extra.c.obj libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_g.c.obj libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_intr.c.obj libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_selftest.c.obj libsrc/gpio/src/CMakeFiles/gpio.dir/xgpio_sinit.c.obj
+  LANGUAGE_COMPILE_FLAGS = -O2 -march=rv32ic_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP -specs=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include
+  OBJECT_DIR = libsrc\gpio\src\CMakeFiles\gpio.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libsrc\gpio\src\libgpio.a
+  TARGET_PDB = gpio.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build libsrc/gpio/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2\microblaze_0\standalone_microblaze_0\bsp\libsrc\build_configs\gen_bsp\libsrc\gpio\src && C:\Xilinx\Vitis\2024.1\tps\win64\cmake-3.24.2\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libsrc/gpio/src/edit_cache: phony libsrc/gpio/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libsrc/gpio/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2\microblaze_0\standalone_microblaze_0\bsp\libsrc\build_configs\gen_bsp\libsrc\gpio\src && C:\Xilinx\Vitis\2024.1\tps\win64\cmake-3.24.2\bin\cmake.exe --regenerate-during-build -SC:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2\microblaze_0\standalone_microblaze_0\bsp -BC:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2\microblaze_0\standalone_microblaze_0\bsp\libsrc\build_configs\gen_bsp"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libsrc/gpio/src/rebuild_cache: phony libsrc/gpio/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libsrc/gpio/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libsrc/gpio/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/gpio/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2\microblaze_0\standalone_microblaze_0\bsp\libsrc\build_configs\gen_bsp\libsrc\gpio\src && C:\Xilinx\Vitis\2024.1\tps\win64\cmake-3.24.2\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libsrc/gpio/src/install: phony libsrc/gpio/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libsrc/gpio/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/gpio/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2\microblaze_0\standalone_microblaze_0\bsp\libsrc\build_configs\gen_bsp\libsrc\gpio\src && C:\Xilinx\Vitis\2024.1\tps\win64\cmake-3.24.2\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libsrc/gpio/src/install/local: phony libsrc/gpio/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libsrc/gpio/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/gpio/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2\microblaze_0\standalone_microblaze_0\bsp\libsrc\build_configs\gen_bsp\libsrc\gpio\src && C:\Xilinx\Vitis\2024.1\tps\win64\cmake-3.24.2\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libsrc/gpio/src/install/strip: phony libsrc/gpio/src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1352,7 +1489,11 @@ build libsrc/xiltimer/src/core/default_timer/install/strip: phony libsrc/xiltime
 
 build combined: phony libsrc/combined
 
+build gpio: phony libsrc/gpio/src/libgpio.a
+
 build intc: phony libsrc/intc/src/libintc.a
+
+build libgpio.a: phony libsrc/gpio/src/libgpio.a
 
 build libintc.a: phony libsrc/intc/src/libintc.a
 
@@ -1383,7 +1524,7 @@ build all: phony libsrc/all libsrc/standalone/src/all libsrc/xiltimer/src/all
 #############################################
 # Folder: C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc
 
-build libsrc/all: phony libsrc/combined libsrc/common/src/all libsrc/intc/src/all libsrc/uartlite/src/all
+build libsrc/all: phony libsrc/combined libsrc/common/src/all libsrc/gpio/src/all libsrc/intc/src/all libsrc/uartlite/src/all
 
 # =============================================================================
 
@@ -1391,6 +1532,13 @@ build libsrc/all: phony libsrc/combined libsrc/common/src/all libsrc/intc/src/al
 # Folder: C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src
 
 build libsrc/common/src/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src
+
+build libsrc/gpio/src/all: phony libsrc/gpio/src/libgpio.a
 
 # =============================================================================
 
@@ -1462,14 +1610,14 @@ build libsrc/xiltimer/src/core/default_timer/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Findcommon.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Findcommonmeta.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/DRVLISTConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/common/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/intc/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/intc/src/INTCConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/MemConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/bspconfig.h.in C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/StandaloneExample.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/intr/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/riscv/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/xilstandalone.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/uartlite/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/XiltimerExample.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/xiltimer.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/xtimer_config.h.in C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/microblaze_riscv_toolchain.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Findcommon.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Findcommonmeta.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/DRVLISTConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/common/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/intc/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/intc/src/INTCConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/MemConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/bspconfig.h.in C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/StandaloneExample.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/intr/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/riscv/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/xilstandalone.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/uartlite/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/XiltimerExample.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/xiltimer.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/xtimer_config.h.in C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/microblaze_riscv_toolchain.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Findcommon.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Findcommonmeta.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/DRVLISTConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/common/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/intc/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/intc/src/INTCConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/MemConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/bspconfig.h.in C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/StandaloneExample.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/intr/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/riscv/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/xilstandalone.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/uartlite/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/XiltimerExample.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/xiltimer.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/xtimer_config.h.in C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/microblaze_riscv_toolchain.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Findcommon.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/Findcommonmeta.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/DRVLISTConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/common/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/intc/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/intc/src/INTCConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/MemConfig.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/bspconfig.h.in C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/StandaloneExample.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/intr/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/riscv/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/xilstandalone.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/uartlite/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/XiltimerExample.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/xiltimer.cmake C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/xtimer_config.h.in C$:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/microblaze_riscv_toolchain.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Xilinx/Vitis/2024.1/tps/win64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################

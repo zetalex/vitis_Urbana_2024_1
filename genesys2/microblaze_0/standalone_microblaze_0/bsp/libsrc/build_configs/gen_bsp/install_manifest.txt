@@ -8,6 +8,9 @@ C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/stand
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xdebug.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xenv.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xenv_standalone.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio_i.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio_l.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xiltimer.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xil_assert.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xil_cache.h
@@ -51,6 +54,9 @@ C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/stand
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xdebug.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xenv.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xenv_standalone.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio_i.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio_l.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xiltimer.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xil_assert.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xil_cache.h
@@ -94,6 +100,9 @@ C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/stand
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xdebug.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xenv.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xenv_standalone.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio_i.h
+C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xgpio_l.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xiltimer.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xil_assert.h
 C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include/../include/xil_cache.h

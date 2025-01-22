@@ -308,6 +308,15 @@ common_IS_TOP_LEVEL:STATIC=OFF
 common_SOURCE_DIR:STATIC=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/common/src
 
 //Value Computed by CMake
+gpio_BINARY_DIR:STATIC=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src
+
+//Value Computed by CMake
+gpio_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gpio_SOURCE_DIR:STATIC=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/gpio/src
+
+//Value Computed by CMake
 intc_BINARY_DIR:STATIC=C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src
 
 //Value Computed by CMake
@@ -514,7 +523,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

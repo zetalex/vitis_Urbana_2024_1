@@ -1,1 +1,1 @@
-set(DRIVER_LIST common;intc;uartlite)
+set(DRIVER_LIST common;gpio;intc;uartlite)

@@ -22,6 +22,25 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling C files.
 
+rule C_COMPILER__gpio_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Xilinx\Vitis\2024.1\gnu\riscv\nt\riscv64-unknown-elf\bin\riscv64-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER__gpio_
+  command = cmd.exe /C "$PRE_LINK && C:\Xilinx\Vitis\2024.1\tps\win64\cmake-3.24.2\bin\cmake.exe -E rm -f $TARGET_FILE && riscv64-unknown-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && C:\Xilinx\Vitis\2024.1\gnu\riscv\nt\riscv64-unknown-elf\bin\riscv64-unknown-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
 rule C_COMPILER__intc_
   depfile = $DEP_FILE
   deps = gcc

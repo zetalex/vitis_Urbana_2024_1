@@ -5,8 +5,8 @@ Id flags:
 
 The output was:
 1
-c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: C:\Users\ALEJAN~1\AppData\Local\Temp\ccuTKcMA.o: can't link soft-float modules with double-float modules
-c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: failed to merge target specific data of file C:\Users\ALEJAN~1\AppData\Local\Temp\ccuTKcMA.o
+c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: C:\Users\ALEJAN~1\AppData\Local\Temp\cc5voZYh.o: can't link soft-float modules with double-float modules
+c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: failed to merge target specific data of file C:\Users\ALEJAN~1\AppData\Local\Temp\cc5voZYh.o
 collect2.exe: error: ld returned 1 exit status
 
 
@@ -19,8 +19,8 @@ Id flags:
 
 The output was:
 1
-c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: C:\Users\ALEJAN~1\AppData\Local\Temp\ccNi5U7n.o: can't link soft-float modules with double-float modules
-c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: failed to merge target specific data of file C:\Users\ALEJAN~1\AppData\Local\Temp\ccNi5U7n.o
+c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: C:\Users\ALEJAN~1\AppData\Local\Temp\ccKFjcgd.o: can't link soft-float modules with double-float modules
+c:/xilinx/vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/bin/riscv32-xilinx-elf/../../libexec/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/ld.exe: failed to merge target specific data of file C:\Users\ALEJAN~1\AppData\Local\Temp\ccKFjcgd.o
 collect2.exe: error: ld returned 1 exit status
 
 
