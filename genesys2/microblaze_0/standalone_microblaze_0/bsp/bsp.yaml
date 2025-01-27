@@ -168,6 +168,10 @@ drv_info:
     driver: gpio
     ip_name: axi_gpio
     path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_11
+  axi_gpio_1:
+    driver: gpio
+    ip_name: axi_gpio
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_11
   axi_intc_0:
     driver: intc
     ip_name: axi_intc

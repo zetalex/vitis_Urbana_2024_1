@@ -14,15 +14,17 @@
 #include "xgpio.h"
 #include "xparameters.h"
 
-XGpio Gpio; /* The Instance of the GPIO Driver */
+XGpio Gpio0; /* The Instance of the GPIO Driver */
+XGpio Gpio1; /* The Instance of the GPIO Driver */
 
-#define SW_BTN_CHANNEL 1
+#define SW_CHANNEL 1
 #define LED_CHANNEL 2
+#define BTN_CHANNEL 1
 #define LED_DELAY     1000000
 
 int main()
 {
-    int Status;
+    int Status0, Status1;
     u32 SW_read;
     u32 LED_write;
     init_platform();
@@ -31,27 +33,32 @@ int main()
     
     	/* Initialize the GPIO driver */
     #ifndef SDT
-        Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+        Status0 = XGpio_Initialize(&Gpio0, GPIO_EXAMPLE_DEVICE_ID);
+        Status1 = XGpio_Initialize(&Gpio1, GPIO_EXAMPLE_DEVICE_ID);
     #else
-        Status = XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_BASEADDR);
+        Status0 = XGpio_Initialize(&Gpio0, XPAR_AXI_GPIO_0_BASEADDR);
+        Status1 = XGpio_Initialize(&Gpio0, XPAR_AXI_GPIO_1_BASEADDR);
     #endif
-        if (Status != XST_SUCCESS) {
+        if (Status0 != XST_SUCCESS || Status1 != XST_SUCCESS ) {
             xil_printf("Gpio Initialization Failed\r\n");
             return XST_FAILURE;
         }
     
-    XGpio_SetDataDirection(&Gpio,SW_BTN_CHANNEL,
-			    0x0000FFFF);
+    XGpio_SetDataDirection(&Gpio0,SW_CHANNEL,
+			    0xFFFFFFFF);
 
-    XGpio_SetDataDirection(&Gpio,LED_CHANNEL,
+    XGpio_SetDataDirection(&Gpio0,LED_CHANNEL,
 			    0x0);
+
+    XGpio_SetDataDirection(&Gpio1,BTN_CHANNEL,
+			    0xFFFFFFFF);
 
     while (1) {
         /* Read Switches */
-        SW_read = XGpio_DiscreteRead(&Gpio, SW_BTN_CHANNEL);
+        SW_read = XGpio_DiscreteRead(&Gpio0, SW_CHANNEL);
         LED_write = SW_read;
         /* Set the corresponding LEDs to the same level as its switch is indicating */
-        XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, LED_write);
+        XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, LED_write);
 	}
     cleanup_platform();
     return 0;

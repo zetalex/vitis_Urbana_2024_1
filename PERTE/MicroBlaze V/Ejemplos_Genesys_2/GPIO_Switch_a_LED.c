@@ -3,11 +3,20 @@
 * SPDX-License-Identifier: MIT
 ******************************************************************************/
 /*
- * Switches_a_LED.c: 
- * Esta aplicacion de ejemplo lee los 16 switches (SW0-SW15) de la placa RealDigital AMD Urbana
- * y escribe el estado de los botones en los 16 LEDs verdes (LED0-LED15) de la misma placa.
- * Para tanto lectura como escritura se utiliza la libreria que controla el AXI GPIO instalado en la FPGA.
+ * helloworld.c: simple test application
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
  */
+
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
@@ -16,18 +25,23 @@
 
 XGpio Gpio; /* The Instance of the GPIO Driver */
 
-#define SW_BTN_CHANNEL 1
-#define LED_CHANNEL 2
+#define SW_LED_CHANNEL 1
+#define RGB_BTN_CHANNEL 2
 #define LED_DELAY     1000000
+#define RED 1
+#define GREEN 2
+#define YELLOW 3
+#define RGB0_offset 4
+#define RGB1_offset 7
 
 int main()
 {
     int Status;
-    u32 SW_read;
-    u32 LED_write;
+    u32 Delay;
     init_platform();
 
-    print("GPIO: Switch to LED\n\r");
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application");
     
     	/* Initialize the GPIO driver */
     #ifndef SDT
@@ -40,18 +54,31 @@ int main()
             return XST_FAILURE;
         }
     
-    XGpio_SetDataDirection(&Gpio,SW_BTN_CHANNEL,
+    XGpio_SetDataDirection(&Gpio,SW_LED_CHANNEL,
 			    0x0000FFFF);
 
-    XGpio_SetDataDirection(&Gpio,LED_CHANNEL,
-			    0x0);
+    XGpio_SetDataDirection(&Gpio,RGB_BTN_CHANNEL,
+			    0xF);
 
     while (1) {
-        /* Read Switches */
-        SW_read = XGpio_DiscreteRead(&Gpio, SW_BTN_CHANNEL);
-        LED_write = SW_read;
-        /* Set the corresponding LEDs to the same level as its switch is indicating */
-        XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, LED_write);
+
+        /* Turn on the RGB LEDs for RED light */
+        XGpio_DiscreteWrite(&Gpio, RGB_BTN_CHANNEL, (RED << RGB1_offset));
+
+        /* Wait a small amount of time so the LED is visible */
+		for (Delay = 0; Delay < LED_DELAY; Delay++);
+
+        /* Turn on the RGB LEDs for yellow lights */
+        XGpio_DiscreteWrite(&Gpio, RGB_BTN_CHANNEL, (YELLOW << RGB1_offset) | (YELLOW << RGB0_offset));
+
+        /* Wait a small amount of time so the LED is visible */
+		for (Delay = 0; Delay < LED_DELAY; Delay++);
+
+        /* Turn on the RGB LEDs for green lights */
+        XGpio_DiscreteWrite(&Gpio, RGB_BTN_CHANNEL, (GREEN << RGB0_offset));
+
+        /* Wait a small amount of time so the LED is visible */
+		for (Delay = 0; Delay < LED_DELAY; Delay++);
 	}
     cleanup_platform();
     return 0;
