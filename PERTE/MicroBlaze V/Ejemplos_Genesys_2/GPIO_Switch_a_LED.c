@@ -13,6 +13,7 @@
 #include "xil_printf.h"
 #include "xgpio.h"
 #include "xparameters.h"
+#include "sleep.h"
 
 XGpio Gpio0; /* The Instance of the GPIO Driver */
 XGpio Gpio1; /* The Instance of the GPIO Driver */
@@ -22,6 +23,7 @@ XGpio Gpio1; /* The Instance of the GPIO Driver */
 #define BTN_CHANNEL 1
 #define LED_DELAY     1000000
 
+
 int main()
 {
     int Status0, Status1;
@@ -29,7 +31,7 @@ int main()
     u32 LED_write;
     init_platform();
 
-    print("GPIO: Switch to LED\n\r");
+    xil_printf("GPIO: Switch to LED\n\r");
     
     	/* Initialize the GPIO driver */
     #ifndef SDT
@@ -58,8 +60,10 @@ int main()
         SW_read = XGpio_DiscreteRead(&Gpio0, SW_CHANNEL);
         LED_write = SW_read;
         /* Set the corresponding LEDs to the same level as its switch is indicating */
+        //XGpio_WriteReg(Gpio0.BaseAddress,((LED_CHANNEL - 1) * XGPIO_CHAN_OFFSET) + XGPIO_DATA_OFFSET,LED_write);
         XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, LED_write);
 	}
     cleanup_platform();
     return 0;
 }
+

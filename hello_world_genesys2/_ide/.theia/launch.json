@@ -20,7 +20,7 @@
 			"targetSetup": {
 				"resetSystem": false,
 				"programDevice": false,
-				"bitstreamFile": "${workspaceFolder}\\hello_world_genesys2\\_ide\\bitstream\\system_wrapper.bit",
+				"bitstreamFile": "${workspaceFolder}/hello_world_genesys2/_ide/bitstream/system_wrapper.bit",
 				"downloadElf": [
 					{
 						"core": "microblaze_0",

@@ -1,3 +1,3 @@
-domain_path: /media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2/export/genesys2/sw/standalone_microblaze_0
-app_src_dir: C:\Xilinx\Vitis\2024.1\data\embeddedsw\lib\sw_apps\hello_world
+domain_path: /media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/export/genesys2_microblaze_standard/sw/standalone_microblaze_0
+app_src_dir: /home/hyperk2/Xilinx/Vitis/2024.1/data/embeddedsw/lib/sw_apps/hello_world
 template: hello_world

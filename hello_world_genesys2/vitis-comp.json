@@ -1,10 +1,10 @@
 {
   "name": "hello_world_genesys2",
   "type": "HOST",
-  "platform": "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2/export/genesys2/genesys2.xpfm",
+  "platform": "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/export/genesys2_microblaze_standard/genesys2_microblaze_standard.xpfm",
   "domain": "standalone_microblaze_0",
   "cpuInstance": "microblaze_0",
-  "cpuType": "microblaze_riscv",
+  "cpuType": "microblaze",
   "os": "standalone",
   "configuration": {
     "componentType": "HOST",
