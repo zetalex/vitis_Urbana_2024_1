@@ -1,7 +1,7 @@
 {
   "name": "hello_world_genesys2",
   "type": "HOST",
-  "platform": "C:\\Users\\Alejandro\\Documents\\git\\vitis_Urbana_2024_1\\genesys2\\export\\genesys2\\genesys2.xpfm",
+  "platform": "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2/export/genesys2/genesys2.xpfm",
   "domain": "standalone_microblaze_0",
   "cpuInstance": "microblaze_0",
   "cpuType": "microblaze_riscv",

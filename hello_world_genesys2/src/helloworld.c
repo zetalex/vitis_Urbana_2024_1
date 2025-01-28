@@ -37,7 +37,7 @@ int main()
         Status1 = XGpio_Initialize(&Gpio1, GPIO_EXAMPLE_DEVICE_ID);
     #else
         Status0 = XGpio_Initialize(&Gpio0, XPAR_AXI_GPIO_0_BASEADDR);
-        Status1 = XGpio_Initialize(&Gpio0, XPAR_AXI_GPIO_1_BASEADDR);
+        Status1 = XGpio_Initialize(&Gpio1, XPAR_AXI_GPIO_1_BASEADDR);
     #endif
         if (Status0 != XST_SUCCESS || Status1 != XST_SUCCESS ) {
             xil_printf("Gpio Initialization Failed\r\n");

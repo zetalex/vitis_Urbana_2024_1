@@ -1,6 +1,6 @@
 sdt: hw_artifacts\microblaze_0_baremetal.dts
 family: null
-path: C:\Users\Alejandro\vitis_projects_bis\platform_microblaze_riscv\microblaze_0\standalone_microblaze_0\bsp
+path: /media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/platform_microblaze_riscv/microblaze_0/standalone_microblaze_0/bsp
 config: None
 os: standalone
 os_info:

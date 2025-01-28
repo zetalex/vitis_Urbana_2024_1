@@ -25,7 +25,7 @@
 					{
 						"core": "microblaze_0",
 						"resetProcessor": true,
-						"elfFile": "${workspaceFolder}\\hello_world_genesys2\\build\\hello_world_genesys2.elf",
+						"elfFile": "${workspaceFolder}/hello_world_genesys2/build/hello_world_genesys2.elf",
 						"stopAtEntry": false
 					}
 				]

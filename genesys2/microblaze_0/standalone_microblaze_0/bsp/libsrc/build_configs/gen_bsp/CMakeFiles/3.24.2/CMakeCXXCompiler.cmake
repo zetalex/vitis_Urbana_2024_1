@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin/riscv64-unknown-elf-g++.exe")
+set(CMAKE_CXX_COMPILER "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/bin/riscv64-unknown-elf-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "12.2.0")
@@ -19,15 +19,15 @@ set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
-set(CMAKE_CXX_COMPILER_SYSROOT "C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin//../riscv32-xilinx-elf/usr")
-set(CMAKE_COMPILER_SYSROOT "C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin//../riscv32-xilinx-elf/usr")
+set(CMAKE_CXX_COMPILER_SYSROOT "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/bin/../riscv32-xilinx-elf/usr")
+set(CMAKE_COMPILER_SYSROOT "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/bin/../riscv32-xilinx-elf/usr")
 
 
 set(CMAKE_AR "riscv64-unknown-elf-ar")
-set(CMAKE_CXX_COMPILER_AR "C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin/riscv64-unknown-elf-gcc-ar.exe")
-set(CMAKE_RANLIB "C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin/riscv64-unknown-elf-ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "CMAKE_CXX_COMPILER_RANLIB-NOTFOUND")
-set(CMAKE_LINKER "C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin/riscv64-unknown-elf-ld.exe")
+set(CMAKE_CXX_COMPILER_AR "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/bin/riscv64-unknown-elf-gcc-ar")
+set(CMAKE_RANLIB "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/bin/riscv64-unknown-elf-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/bin/riscv64-unknown-elf-gcc-ranlib")
+set(CMAKE_LINKER "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/bin/riscv64-unknown-elf-ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -78,7 +78,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include;C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include;C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/x86_64-w64-mingw32/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include-fixed;C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include/c++/12.2.0;C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include/c++/12.2.0/riscv32-xilinx-elf;C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include/c++/12.2.0/backward;C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2/microblaze_0/standalone_microblaze_0/bsp/include;/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include;/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/12.2.0/include-fixed;/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include/c++/12.2.0;/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include/c++/12.2.0/riscv32-xilinx-elf;/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include/c++/12.2.0/backward;/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

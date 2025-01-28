@@ -17,7 +17,7 @@ set( CMAKE_HW_FLAGS "-march=rv32ic_zicsr_zifencei -mabi=ilp32" )
 
 set( CMAKE_BSP_HW_LINK_FLAGS "-march=rv32ic" )
 
-set( CMAKE_COMPILER_LIB_PATH "C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/riscv32-xilinx-elf/usr/lib/rv32ic/ilp32/" )
+set( CMAKE_COMPILER_LIB_PATH "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/lib/rv32ic/ilp32/" )
 
 set( CMAKE_SPECS_FILE "$ENV{ESW_REPO}/scripts/specs/microblaze/Xilinx.spec" CACHE STRING "Specs file path for using CMAKE toolchain files" )
 set( TOOLCHAIN_C_FLAGS " -O2 ${CMAKE_HW_FLAGS} -DSDT" CACHE STRING "CFLAGS" )

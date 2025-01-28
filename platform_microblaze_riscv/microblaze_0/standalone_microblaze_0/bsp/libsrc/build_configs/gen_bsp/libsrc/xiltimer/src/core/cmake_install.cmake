@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Alejandro/vitis_projects_bis/platform_microblaze_riscv/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core
+# Install script for directory: /media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/platform_microblaze_riscv/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/bsp")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Xilinx/Vitis/2024.1/gnu/riscv/nt/riscv64-unknown-elf/bin/riscv64-unknown-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/riscv/lin/riscv64-unknown-elf/bin/riscv64-unknown-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Alejandro/vitis_projects_bis/platform_microblaze_riscv/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake")
+  include("/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/platform_microblaze_riscv/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake")
 
 endif()
 
