@@ -17,69 +17,145 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
+#include <stdint.h>
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
-#include "xgpio.h"
-#include "xparameters.h"
+#include "xtimer_config.h"
+#include "timer.h"
+#include "cdma.h"
+#include "xstatus.h"
+#include <string.h>
+#include <stdlib.h>
 
-XGpio Gpio; /* The Instance of the GPIO Driver */
+#define BYTES_TO_TRANSFER 1000
 
-#define SW_LED_CHANNEL 1
-#define RGB_BTN_CHANNEL 2
-#define LED_DELAY     1000000
-#define RED 1
-#define GREEN 2
-#define YELLOW 3
-#define RGB0_offset 4
-#define RGB1_offset 7
+u8 source[BYTES_TO_TRANSFER] __attribute__ ((aligned (64)));;
+u8 destination[BYTES_TO_TRANSFER] __attribute__ ((aligned (64)));;
+
+static u32 parallel_task_operations = 0;
+
+static void buffer_check();
+
+static void buffer_random_fill();
+
+static void buffer_copy_without_dma();
+
+static int buffer_copy_with_dma();
+
+static void parallel_task();
 
 int main()
 {
     int Status;
-    u32 Delay;
+    u32 time_initial,  time_final, time_elapsed;
+    char time_elapsed_char[100];
+
     init_platform();
 
-    print("Hello World\n\r");
-    print("Successfully ran Hello World application");
+    Status = timer_init();
+    if(XST_SUCCESS != Status)
+    {
+        print("Timer Init Error\n\r");
+    }
+
+    print("Hello HW/SW Codesigner!!\n\r");
+
+    buffer_random_fill();
+
+    time_initial = time_get();
+
+    buffer_copy_without_dma();
+
+    time_final = time_get();
+
+    time_elapsed = time_final- time_initial;
+
+    sprintf(time_elapsed_char,"Time elapsed NO DMA: %lu\n\r",time_elapsed);
+    print(time_elapsed_char);
+    buffer_check();
+
+
+    buffer_random_fill();
+
+    time_initial = time_get();
+
+    buffer_copy_with_dma();
+
+    time_final = time_get();
     
-    	/* Initialize the GPIO driver */
-    #ifndef SDT
-        Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
-    #else
-        Status = XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_BASEADDR);
-    #endif
-        if (Status != XST_SUCCESS) {
-            xil_printf("Gpio Initialization Failed\r\n");
-            return XST_FAILURE;
-        }
+    time_elapsed = time_final- time_initial;
     
-    XGpio_SetDataDirection(&Gpio,SW_LED_CHANNEL,
-			    0x0000FFFF);
-
-    XGpio_SetDataDirection(&Gpio,RGB_BTN_CHANNEL,
-			    0xF);
-
-    while (1) {
-
-        /* Turn on the RGB LEDs for RED light */
-        XGpio_DiscreteWrite(&Gpio, RGB_BTN_CHANNEL, (RED << RGB1_offset));
-
-        /* Wait a small amount of time so the LED is visible */
-		for (Delay = 0; Delay < LED_DELAY; Delay++);
-
-        /* Turn on the RGB LEDs for yellow lights */
-        XGpio_DiscreteWrite(&Gpio, RGB_BTN_CHANNEL, (YELLOW << RGB1_offset) | (YELLOW << RGB0_offset));
-
-        /* Wait a small amount of time so the LED is visible */
-		for (Delay = 0; Delay < LED_DELAY; Delay++);
-
-        /* Turn on the RGB LEDs for green lights */
-        XGpio_DiscreteWrite(&Gpio, RGB_BTN_CHANNEL, (GREEN << RGB0_offset));
-
-        /* Wait a small amount of time so the LED is visible */
-		for (Delay = 0; Delay < LED_DELAY; Delay++);
-	}
+    sprintf(time_elapsed_char,"Time elapsed DMA: %lu\n\r",time_elapsed);
+    print(time_elapsed_char);
+    sprintf(time_elapsed_char,"Parallel task iterations executed: %lu\n\r",parallel_task_operations);
+    print(time_elapsed_char);
+    buffer_check();
+    
     cleanup_platform();
     return 0;
+}
+
+
+static void buffer_random_fill()
+{
+    srand((unsigned int)time_get());
+    for(u32 pos = 0; pos < BYTES_TO_TRANSFER; pos++)
+    {
+        source[pos]=(u8)rand();
+    }
+}
+
+
+static void buffer_copy_without_dma()
+{
+    for(u32 pos = 0; pos < BYTES_TO_TRANSFER; pos++)
+    {
+        destination[pos]=source[pos];
+    }
+}
+
+static int buffer_copy_with_dma()
+{
+    int Status;
+
+    
+    if (Status = XAxiCdma_Transfer_Start(source, destination, BYTES_TO_TRANSFER), XST_SUCCESS != Status)
+    {
+        return Status;
+    }
+
+    do {
+        Status = XAxiCdma_Transfer_End_Check();
+        parallel_task();
+
+    }while (XST_DEVICE_BUSY == Status);
+
+    return Status;
+}
+
+static void buffer_check()
+{
+    u32 pos;
+    for(pos = 0; pos < BYTES_TO_TRANSFER; pos++)
+    {
+        if(destination[pos]!=source[pos])
+        {
+            break;
+        }
+    }
+
+    if(BYTES_TO_TRANSFER != pos)
+    {
+        print ("ERROR: Buffers are not the same\n\r");
+    }
+    else {
+        print ("SUCCESS: Buffers are the same\n\r");
+    }
+}
+
+static void parallel_task()
+{
+    ++parallel_task_operations;
+
 }

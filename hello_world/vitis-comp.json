@@ -1,10 +1,10 @@
 {
   "name": "hello_world",
   "type": "HOST",
-  "platform": "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2/export/genesys2/genesys2.xpfm",
+  "platform": "/home/asanche4/Master/nanoupv2025/vitis_Urbana_2024_1_analog/platform_microblaze/export/platform_microblaze/platform_microblaze.xpfm",
   "domain": "standalone_microblaze_0",
   "cpuInstance": "microblaze_0",
-  "cpuType": "microblaze_riscv",
+  "cpuType": "microblaze",
   "os": "standalone",
   "configuration": {
     "componentType": "HOST",

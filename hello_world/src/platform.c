@@ -63,6 +63,7 @@ init_uart()
     /* Bootrom/BSP configures PS7/PSU UART to 115200 bps */
 }
 
+
 void
 init_platform()
 {

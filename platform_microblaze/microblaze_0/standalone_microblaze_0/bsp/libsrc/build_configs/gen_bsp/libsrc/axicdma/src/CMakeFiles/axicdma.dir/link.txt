@@ -1,0 +1,2 @@
+mb-ar qc libaxicdma.a CMakeFiles/axicdma.dir/xaxicdma_sinit.c.obj CMakeFiles/axicdma.dir/xaxicdma_bdring.c.obj CMakeFiles/axicdma.dir/xaxicdma_g.c.obj CMakeFiles/axicdma.dir/xaxicdma.c.obj CMakeFiles/axicdma.dir/xaxicdma_bd.c.obj CMakeFiles/axicdma.dir/xaxicdma_intr.c.obj
+/cad/adi/apps/xilinx/vivado/2024.1/Vitis/2024.1/gnu/microblaze/lin/bin/mb-ranlib libaxicdma.a
