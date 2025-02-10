@@ -97,6 +97,9 @@ int main()
 }
 
 
+/**
+ * @brief Fills the source buffer with random data.
+ */
 static void buffer_random_fill()
 {
     srand((unsigned int)time_get());
@@ -106,7 +109,9 @@ static void buffer_random_fill()
     }
 }
 
-
+/**
+ * @brief Copies data from the source buffer to the destination buffer without using DMA.
+ */
 static void buffer_copy_without_dma()
 {
     for(u32 pos = 0; pos < BYTES_TO_TRANSFER; pos++)
@@ -115,11 +120,17 @@ static void buffer_copy_without_dma()
     }
 }
 
+/**
+ * @brief Copies data from the source buffer to the destination buffer using DMA.
+ * 
+ * @return Status of the DMA transfer.
+ * @retval XST_SUCCESS if the transfer was successful.
+ * @retval XST_FAILURE if the transfer failed.
+ */
 static int buffer_copy_with_dma()
 {
     int Status;
 
-    
     if (Status = XAxiCdma_Transfer_Start(source, destination, BYTES_TO_TRANSFER), XST_SUCCESS != Status)
     {
         return Status;
@@ -134,6 +145,9 @@ static int buffer_copy_with_dma()
     return Status;
 }
 
+/**
+ * @brief Checks if the data in the source and destination buffers are the same.
+ */
 static void buffer_check()
 {
     u32 pos;
@@ -154,8 +168,10 @@ static void buffer_check()
     }
 }
 
+/**
+ * @brief Performs a parallel task operation.
+ */
 static void parallel_task()
 {
     ++parallel_task_operations;
-
 }

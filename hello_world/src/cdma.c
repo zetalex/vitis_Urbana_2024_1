@@ -61,21 +61,6 @@ static XAxiCdma AxiCdmaInstance;	/* Instance of the XAxiCdma */
 
 static u32 PollTimeoutCounter;      /* Variable to control CDMA transfer tiemout */
 
-/*****************************************************************************/
-/**
-* The entry point for this example. It invokes the example function,
-* and reports the execution status.
-*
-* @param	None.
-*
-* @return
-*		- XST_SUCCESS if example finishes successfully
-*		- XST_FAILURE if example fails.
-*
-* @note		None.
-*
-******************************************************************************/
-
 int XAxiCdma_Transfer_Start(u8  *SrcBuffer, u8  *DestBuffer, int Length)
 {
 	int Status;
@@ -143,24 +128,6 @@ int XAxiCdma_Transfer_Start(u8  *SrcBuffer, u8  *DestBuffer, int Length)
 
 
 
-
-
-/*****************************************************************************/
-/*
-* This function does one simple transfer in polled mode
-*
-* @param	InstancePtr is a pointer to the XAxiCdma instance
-* @param	Length is the transfer length
-* @param	Retries is how many times to retry on submission
-*
-* @return
-*		- XST_SUCCESS if transfer is successful
-*		- XST_FAILURE if either the transfer fails or the data has
-*		  error
-*
-* @note		None
-*
-******************************************************************************/
 int XAxiCdma_Transfer_End_Check()
 {
     XAxiCdma *InstancePtr = &AxiCdmaInstance;
