@@ -1,0 +1,1 @@
+{"generate.platform":[{"uri":"C:\\Users\\Alejandro\\Documents\\git\\vitis_Urbana_2024_1\\genesys2\\vitis-comp.json","md5":"3dee3b3316cc359ad570d867a96090f9"},{"uri":"C:\\Users\\Alejandro\\Documents\\git\\vitis_Urbana_2024_1\\genesys2\\microblaze_0\\standalone_microblaze_0\\bsp\\bsp.yaml","md5":"69ff58ad489332ae18f7803122c04c31"}]}

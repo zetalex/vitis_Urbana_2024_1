@@ -1,8 +1,8 @@
-# Install script for directory: /media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src
+# Install script for directory: C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/bsp")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,36 +34,36 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/microblaze/lin/bin/mb-objdump")
+  set(CMAKE_OBJDUMP "C:/Xilinx/Vitis/2024.1/gnu/microblaze/nt/bin/mb-objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/lib/libxiltimer.a")
+   "C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/lib/libxiltimer.a")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/lib" TYPE STATIC_LIBRARY MESSAGE_LAZY FILES "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/libxiltimer.a")
+  file(INSTALL DESTINATION "C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/lib" TYPE STATIC_LIBRARY MESSAGE_LAZY FILES "C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/libxiltimer.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/include/../include")
+   "C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2_microblaze_standard\microblaze_0\standalone_microblaze_0\bsp\include/../include")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/include/.." TYPE DIRECTORY MESSAGE_LAZY FILES "/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include")
+  file(INSTALL DESTINATION "C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2_microblaze_standard\microblaze_0\standalone_microblaze_0\bsp\include/.." TYPE DIRECTORY MESSAGE_LAZY FILES "C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/cmake_install.cmake")
+  include("C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/cmake_install.cmake")
 
 endif()
 

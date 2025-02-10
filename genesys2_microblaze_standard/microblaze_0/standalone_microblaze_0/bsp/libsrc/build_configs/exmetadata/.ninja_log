@@ -1,0 +1,17 @@
+# ninja log v5
+17	737	0	CMakeFiles/intc_example	2d805d6f8ea39c3e
+17	737	0	xintc_exlist.yaml	2d805d6f8ea39c3e
+17	737	0	C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/intc_example	2d805d6f8ea39c3e
+17	737	0	C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/xintc_exlist.yaml	2d805d6f8ea39c3e
+26	739	0	CMakeFiles/tmrctr_example	bf481f171da0bfdc
+26	739	0	xtmrctr_exlist.yaml	bf481f171da0bfdc
+26	739	0	C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/tmrctr_example	bf481f171da0bfdc
+26	739	0	C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/xtmrctr_exlist.yaml	bf481f171da0bfdc
+7	740	0	CMakeFiles/gpio_example	3bfdffe72ec334e3
+7	740	0	xgpio_exlist.yaml	3bfdffe72ec334e3
+7	740	0	C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/gpio_example	3bfdffe72ec334e3
+7	740	0	C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/xgpio_exlist.yaml	3bfdffe72ec334e3
+35	741	0	CMakeFiles/uartlite_example	b751166f0a977f9c
+35	741	0	xuartlite_exlist.yaml	b751166f0a977f9c
+35	741	0	C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/uartlite_example	b751166f0a977f9c
+35	741	0	C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/xuartlite_exlist.yaml	b751166f0a977f9c

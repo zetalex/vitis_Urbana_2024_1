@@ -1,11 +1,11 @@
-sdt: hw_artifacts/microblaze_0_baremetal.dts
+sdt: hw_artifacts\microblaze_0_baremetal.dts
 family: kintex7
-path: /media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp
+path: C:\Users\Alejandro\Documents\git\vitis_Urbana_2024_1\genesys2_microblaze_standard\microblaze_0\standalone_microblaze_0\bsp
 config: None
 os: standalone
 os_info:
   standalone:
-    path: /home/hyperk2/Xilinx/Vitis/2024.1/data/embeddedsw/lib/bsp/standalone_v9_1
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\lib\bsp\standalone_v9_1
 os_config:
   standalone:
     standalone_clocking:
@@ -123,7 +123,7 @@ proc_config:
       permission: readonly
       type: string
       value: mb-gcc-ar
-      default: mb-gcc-ar
+      default: mb-gcc-ar.exe
       options: []
       description: Archiver
     proc_assembler:
@@ -139,7 +139,7 @@ proc_config:
       permission: readonly
       type: string
       value: mb-gcc
-      default: mb-gcc
+      default: mb-gcc.exe
       options: []
       description: Compiler
     proc_compiler_flags:
@@ -167,7 +167,7 @@ drv_info:
   axi_gpio_0:
     driver: gpio
     ip_name: axi_gpio
-    path: /home/hyperk2/Xilinx/Vitis/2024.1/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_11
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_11
     examples:
       xgpio_example.c: []
       xgpio_intr_tapp_example.c: []
@@ -176,7 +176,7 @@ drv_info:
   axi_gpio_1:
     driver: gpio
     ip_name: axi_gpio
-    path: /home/hyperk2/Xilinx/Vitis/2024.1/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_11
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_11
     examples:
       xgpio_example.c: []
       xgpio_intr_tapp_example.c: []
@@ -185,7 +185,7 @@ drv_info:
   axi_intc_0:
     driver: intc
     ip_name: axi_intc
-    path: /home/hyperk2/Xilinx/Vitis/2024.1/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_18
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\intc_v3_18
     examples:
       xintc_example.c: []
       xintc_low_level_example.c: []
@@ -193,7 +193,7 @@ drv_info:
   axi_timer_0:
     driver: tmrctr
     ip_name: axi_timer
-    path: /home/hyperk2/Xilinx/Vitis/2024.1/data/embeddedsw/XilinxProcessorIPLib/drivers/tmrctr_v4_12
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\tmrctr_v4_12
     examples:
       xtmrctr_selftest_example.c: []
       xtmrctr_polled_example.c: []
@@ -205,21 +205,21 @@ drv_info:
   axi_uartlite_0:
     driver: uartlite
     ip_name: axi_uartlite
-    path: /home/hyperk2/Xilinx/Vitis/2024.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_10
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\uartlite_v3_10
     examples:
       xuartlite_low_level_example.c: []
       xuartlite_polled_example.c: []
       xuartlite_selftest_example.c: []
 lib_info:
   xiltimer:
-    path: /home/hyperk2/Xilinx/Vitis/2024.1/data/embeddedsw/lib/sw_services/xiltimer_v2_0
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\lib\sw_services\xiltimer_v2_0
 lib_config:
   xiltimer:
     XILTIMER_en_interval_timer:
       name: XILTIMER_en_interval_timer
       permission: read_write
       type: boolean
-      value: 'false'
+      value: 'true'
       default: 'false'
       options:
       - 'true'

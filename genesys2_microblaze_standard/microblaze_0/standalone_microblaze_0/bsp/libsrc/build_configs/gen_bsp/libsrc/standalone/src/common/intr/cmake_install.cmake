@@ -1,8 +1,8 @@
-# Install script for directory: /media/hyperk2/SSD_DATA/GITHUB/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/intr
+# Install script for directory: C:/Users/Alejandro/Documents/git/vitis_Urbana_2024_1/genesys2_microblaze_standard/microblaze_0/standalone_microblaze_0/bsp/libsrc/standalone/src/common/intr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/bsp")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/microblaze/lin/bin/mb-objdump")
+  set(CMAKE_OBJDUMP "C:/Xilinx/Vitis/2024.1/gnu/microblaze/nt/bin/mb-objdump.exe")
 endif()
 

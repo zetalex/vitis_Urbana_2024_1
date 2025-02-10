@@ -15,7 +15,7 @@ set( CMAKE_SYSTEM_PROCESSOR "microblaze" )
 set( CMAKE_SYSTEM_NAME "Generic" )
 set( CMAKE_HW_FLAGS "-mxl-barrel-shift -mlittle-endian -mxl-soft-mul -mcpu=v11.0" )
 
-set( CMAKE_COMPILER_LIB_PATH "/home/hyperk2/Xilinx/Vitis/2024.1/gnu/microblaze/lin/microblazeeb-xilinx-elf/usr/lib/le/bs/" )
+set( CMAKE_COMPILER_LIB_PATH "C:/Xilinx/Vitis/2024.1/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/lib/le/bs/" )
 
 set( CMAKE_SPECS_FILE "$ENV{ESW_REPO}/scripts/specs/microblaze/Xilinx.spec" CACHE STRING "Specs file path for using CMAKE toolchain files" )
 set( TOOLCHAIN_C_FLAGS " -O2 ${CMAKE_HW_FLAGS} -DSDT" CACHE STRING "CFLAGS" )

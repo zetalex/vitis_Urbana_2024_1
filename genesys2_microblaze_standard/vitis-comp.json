@@ -3,8 +3,8 @@
   "type": "PLATFORM",
   "configuration": {
     "description": "",
-    "xsa": "/media/hyperk2/SSD_DATA/GITHUB/genesys_2_2024_1/system_wrapper.xsa",
-    "xsaPathInPlatform": "genesys2_microblaze_standard/hw/system_wrapper.xsa",
+    "xsa": "C:\\Users\\Alejandro\\Documents\\git\\genesys2_basic\\system_wrapper.xsa",
+    "xsaPathInPlatform": "genesys2_microblaze_standard\\hw\\system_wrapper.xsa",
     "emulationXsa": "",
     "emulationXsaPathInPlatform": "",
     "isCustomFSBL": false,
